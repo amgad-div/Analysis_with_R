@@ -57,7 +57,7 @@ summary(my_data$fleet_start)
 # Find missing values in fleet_start
 missing_values <- is.na(my_data$fleet_start)
 num_missing <- sum(missing_values)
-result <- paste('the number of missing values in Time columns is ', num_missing)
+result <- paste('the number of missing values in fleet_start columns is ', num_missing)
 print(result)
 
 ## get summary
@@ -69,7 +69,7 @@ summary(my_data$fleet_start)
 # Find missing values in fleet_finish
 missing_values <- is.na(my_data$fleet_finish)
 num_missing <- sum(missing_values)
-result <- paste('the number of missing values in Time columns is ', num_missing)
+result <- paste('the number of missing values in fleet_finish columns is ', num_missing)
 print(result)
 
 ## get summary
