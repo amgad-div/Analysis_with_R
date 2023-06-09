@@ -49,6 +49,14 @@ my_data$Time <- ifelse(is.na(my_data$Time), default_value, sub("NA", default_val
 
 # Print the updated data frame
 print(my_data$Time)
+########################## anthor way i can predict the missing values but i choose above
+#install.packages("mice")
+#library(mice)
+
+#Pre.imputation <- mice(my_data,m = 5,meth = c("", "pmm", "logreg", "pmm"),maxit = 20)
+#Pre.imputation$Time
+#mynewdata <- complete(Pre.imputation, 5)
+
 
 ## get summary
 summary(my_data$fleet_start)
